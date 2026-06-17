@@ -36,33 +36,26 @@ export default function Skills() {
             borderRadius: 3,
             overflow: 'hidden',
             background: 'rgba(15,23,42,0.9)',
-          }}
-        >
-          <Box component="table" sx={{ width: '100%', borderCollapse: 'collapse' }}>
-            <Box component="tbody">
+          }}>
+          <Box sx={{ width: '100%' }}>
+            <Box>
               {skillGroups.map((group, index) => (
                 <Box
-                  component="tr"
                   key={group.category}
                   sx={{
-                    borderBottom: index !== skillGroups.length - 1
-                      ? '1px solid rgba(59,130,246,0.08)'
-                      : 'none',
+                    display: 'grid',
+                    gridTemplateColumns: { xs: '1fr', md: '220px 1px 1fr' },
+                    alignItems: 'center',
+                    gap: { xs: 1, md: 2 },
+                    px: { xs: 2, md: 3 },
+                    py: { xs: 1.5, md: 2.5 },
+                    borderBottom: index !== skillGroups.length - 1 ? '1px solid rgba(59,130,246,0.08)' : 'none',
                     '&:hover': { background: 'rgba(59,130,246,0.03)' },
                     transition: 'background 0.15s ease',
                   }}
                 >
                   {/* Category */}
-                  <Box
-                    component="td"
-                    sx={{
-                      width: { xs: '120px', md: '220px' },
-                      px: 3,
-                      py: 2.5,
-                      verticalAlign: 'top',
-                      whiteSpace: 'nowrap',
-                    }}
-                  >
+                  <Box sx={{ display: 'flex', alignItems: 'flex-start' }}>
                     <Typography
                       sx={{
                         color: '#60A5FA',
@@ -76,44 +69,39 @@ export default function Skills() {
                     </Typography>
                   </Box>
 
-                  {/* Divider column */}
-                  <Box
-                    component="td"
-                    sx={{ width: '1px', p: 0, verticalAlign: 'stretch' }}
-                  >
+                  {/* Divider (hidden on small screens) */}
+                  <Box sx={{ display: { xs: 'none', md: 'block' }, px: 0 }}>
                     <Divider orientation="vertical" sx={{ borderColor: 'rgba(59,130,246,0.08)', height: '100%' }} />
                   </Box>
 
                   {/* Skills as pills */}
-                  <Box component="td" sx={{ px: 3, py: 2, verticalAlign: 'middle' }}>
-                    <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
-                      {group.skills.map((skill) => (
-                        <Box
-                          key={skill}
-                          component="span"
-                          sx={{
-                            px: 1.5,
-                            py: 0.4,
-                            borderRadius: '999px',
-                            fontSize: '0.78rem',
-                            fontFamily: 'monospace',
-                            color: '#94A3B8',
-                            border: '1px solid rgba(59,130,246,0.15)',
-                            background: 'rgba(59,130,246,0.05)',
-                            whiteSpace: 'nowrap',
-                            transition: 'all 0.15s ease',
-                            cursor: 'default',
-                            '&:hover': {
-                              color: '#E2E8F0',
-                              background: 'rgba(59,130,246,0.12)',
-                              borderColor: 'rgba(59,130,246,0.35)',
-                            },
-                          }}
-                        >
-                          {skill}
-                        </Box>
-                      ))}
-                    </Box>
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                    {group.skills.map((skill) => (
+                      <Box
+                        key={skill}
+                        component="span"
+                        sx={{
+                          px: 1.5,
+                          py: 0.4,
+                          borderRadius: '999px',
+                          fontSize: '0.78rem',
+                          fontFamily: 'monospace',
+                          color: '#94A3B8',
+                          border: '1px solid rgba(59,130,246,0.15)',
+                          background: 'rgba(59,130,246,0.05)',
+                          whiteSpace: 'nowrap',
+                          transition: 'all 0.15s ease',
+                          cursor: 'default',
+                          '&:hover': {
+                            color: '#E2E8F0',
+                            background: 'rgba(59,130,246,0.12)',
+                            borderColor: 'rgba(59,130,246,0.35)',
+                          },
+                        }}
+                      >
+                        {skill}
+                      </Box>
+                    ))}
                   </Box>
                 </Box>
               ))}

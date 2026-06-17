@@ -32,7 +32,7 @@ const contactInfo = [
   {
     icon: <LocationOnIcon />,
     label: 'Location',
-    value: 'Jaipur, India (Open to Remote)',
+    value: 'Delhi, India (Open to Remote)',
   },
 ];
 

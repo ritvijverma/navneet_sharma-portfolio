@@ -129,7 +129,7 @@ export default function Hero() {
               <Stack direction="row" spacing={1}>
                 <LocationOnIcon color="primary" />
                 <Typography sx={{ color: '#CBD5E1' }}>
-                  Jaipur, India
+                  Delhi, India
                 </Typography>
               </Stack>
 

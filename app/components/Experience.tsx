@@ -14,7 +14,7 @@ const experiences = [
     title: 'Technical Architect',
     company: 'Programmers.io',
     period: 'Jun 2024 – Present',
-    location: 'Jaipur (Remote)',
+    location: 'Delhi (Remote)',
     client: 'Virtutem / USA',
     project: 'Planning System & Customer Complaints',
     description:
