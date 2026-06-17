@@ -1,36 +1,157 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Navneet Sharma Portfolio
+
+A modern, responsive portfolio website built with **Next.js**, **TypeScript**, and **Material UI** showcasing the professional journey, technical expertise, and experience of **Navneet Sharma**, a Technical Architect with 15+ years of experience in enterprise software development, cloud architecture, and microservices.
+
+## Features
+
+* Responsive modern UI
+* Professional Technical Architect portfolio
+* Hero section with contact information
+* About section highlighting leadership and architecture expertise
+* Skills matrix covering technologies and tools
+* Detailed experience timeline
+* Education section
+* Contact section with social links
+* Optimized for desktop, tablet, and mobile devices
+
+## Tech Stack
+
+### Frontend
+
+* Next.js 15
+* React
+* TypeScript
+* Material UI (MUI)
+
+### Styling
+
+* Material UI Components
+* MUI SX Styling System
+* Responsive Layouts
+* Custom Theme Styling
+
+## Project Structure
+
+```text
+src/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+│
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Skills.tsx
+│   ├── Experience.tsx
+│   ├── Education.tsx
+│   └── Contact.tsx
+```
+
+## Sections
+
+### Hero
+
+* Introduction
+* Professional Summary
+* Contact Links
+* Quick Statistics
+
+### About
+
+* Technical Leadership
+* Architecture Expertise
+* Domain Experience
+* Career Highlights
+
+### Skills
+
+* Languages
+* Frontend Technologies
+* Backend & APIs
+* Databases
+* Cloud & DevOps
+* Observability
+* Testing
+* Architecture Patterns
+* Code Quality Tools
+* BI & Reporting
+* Development Tools
+
+### Experience
+
+Professional journey across:
+
+* Programmers.io
+* EA Technologies
+* TechUnido Software
+* HCL Technologies
+* GlobalLogic India
+* Q3 Technology
+* Accortis Technologies
+* Educomp Solutions
+* Ezee Tips
+
+### Education
+
+* B.Tech (Information Technology)
+* Senior Secondary
+* Higher Secondary
+
+### Contact
+
+* Email
+* Phone
+* Location
+* LinkedIn
+* GitHub
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build for production:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+The application can be deployed on:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Vercel
+* Netlify
+* Azure Static Web Apps
+* AWS Amplify
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Author
+
+**Navneet Sharma**
+
+Technical Architect | .NET | Azure | Microservices
+
+15+ years of experience delivering enterprise-grade solutions across Finance, Retail, Manufacturing, E-Commerce, and Cloud platforms.
