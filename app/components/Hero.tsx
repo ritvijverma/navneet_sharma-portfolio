@@ -19,8 +19,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 export default function Hero() {
   const stats = [
     { value: '15+', label: 'Years Experience' },
-    { value: '10+', label: 'Organizations' },
-    { value: '20+', label: 'Enterprise Projects' },
+    { value: '8+', label: 'Organizations' },
+    { value: '10', label: 'Enterprise Projects' },
     { value: '6+', label: 'Domains' },
   ];
 
