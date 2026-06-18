@@ -4,17 +4,46 @@ import { Box, Container, Typography, Divider } from '@mui/material';
 
 const skillGroups = [
   { category: 'Languages', skills: ['C#', 'TypeScript', 'JavaScript', 'Python', 'VB', 'COBOL'] },
-  { category: 'Frontend', skills: ['React', 'Next.js', 'Blazor', 'Angular', 'jQuery', 'KnockoutJS'] },
+  {
+    category: 'Frontend', skills: ['React', 'Next.js', 'Blazor', 'Angular', 'jQuery', 'KnockoutJS', 'AJAX'
+    ]
+  },
   { category: 'Backend & APIs', skills: ['.NET Core', 'ASP.NET MVC', 'Web API', 'WCF', 'Node.js', 'Express.js', 'Django'] },
   { category: 'Databases', skills: ['SQL Server', 'PostgreSQL', 'Oracle', 'MySQL', 'MongoDB'] },
   { category: 'ORM', skills: ['Entity Framework', 'Dapper', 'ADO.NET', 'NHibernate', 'LINQ'] },
-  { category: 'Cloud & DevOps', skills: ['Azure', 'AWS', 'Docker', 'Azure Pipelines', 'Azure App Services', 'Azure Data Factory'] },
+  {
+    category: 'Cloud & DevOps', skills: ['Azure', 'AWS', 'Docker', 'Azure Pipelines', 'Azure App Services', 'Azure Data Factory', 'Runbooks',
+      'WebJobs']
+  },
   { category: 'Observability', skills: ['OpenTelemetry', 'Grafana', 'Prometheus', 'ELK Stack'] },
-  { category: 'Testing', skills: ['xUnit', 'MSTest', 'NUnit', 'Jest', 'Mocha', 'Playwright'] },
-  { category: 'Patterns & Architecture', skills: ['Microservices', 'CQRS', 'MVVM', 'N-Tier', 'Factory', 'Singleton', 'DI'] },
+  {
+    category: 'Testing', skills: ['xUnit', 'MSTest', 'NUnit', 'Jest', 'Mocha', 'Playwright', 'Unit Testing'
+    ]
+  },
+  {
+    category: 'Patterns & Architecture', skills: ['Microservices', 'CQRS', 'MVVM', 'N-Tier', 'Factory', 'Singleton', 'DI', 'OOP',
+      'SDLC',
+      'Code Reviews']
+  },
   { category: 'Code Quality', skills: ['SonarQube', 'SonarCloud', 'StyleCop', 'FxCop', 'CAT.NET'] },
-  { category: 'BI & Reporting', skills: ['MSBI', 'Power BI', 'SSIS', 'SSRS', 'SSAS'] },
-  { category: 'Tools', skills: ['Visual Studio', 'VS Code', 'Postman', 'Swagger', 'Git', 'Bitbucket', 'TFS'] },
+  {
+    category: 'BI & Reporting', skills: ['MSBI', 'Power BI', 'SSIS', 'SSRS', 'SSAS', 'Reports',
+      'Charts']
+  },
+  {
+    category: 'Tools', skills: ['Visual Studio', 'VS Code', 'Postman', 'Swagger', 'Git', 'Bitbucket', 'TFS', 'PuTTY',
+      'PowerShell', 'Bruno']
+  },
+  {
+    category: 'Enterprise Tools',
+    skills: [
+      'Infragistics',
+      'ClickOnce',
+      'SendGrid',
+      'Load Balancers',
+      'NopCommerce'
+    ],
+  },
 ];
 
 export default function Skills() {
